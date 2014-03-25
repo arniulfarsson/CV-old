@@ -1,0 +1,52 @@
+body {
+  min-height: 2000px;
+  padding-top: 70px;
+}
+nav{
+    background: fixed;
+}
+nav li {
+    background: #FFF;
+    height: 2em;
+    font-family: Helvetica;
+}
+span{
+    font-size: 22px;
+}
+.home1 {
+    min-height: 50%;
+    background: url("https://dl.dropboxusercontent.com/u/5654383/arnigeir.com/IMG_7707.JPG") fixed;
+    background-size: cover;
+    background-position:center center;
+    max-width: 100% !important;
+}
+.starf {
+    min-height: 50%;
+    background: #FFFFF9 fixed;
+    background-size: cover;
+    background-position:center center;
+    max-width: 100% !important;
+}
+.ummig{
+    margin-top:27em;
+    background: #FFFFF9 fixed;
+}
+.haus{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+body {
+  padding-top: 70px;
+}
+footer {
+  padding: 30px 0;
+}
