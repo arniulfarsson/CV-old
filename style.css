@@ -1,0 +1,244 @@
+*{
+	box-sizing: border-box;
+	overflow: auto;
+}
+
+/* Litir */
+body{
+	background-color: #ffffff;
+	}
+
+table {
+  border-collapse: collapse;
+}
+
+/*footer{
+	background-color: #e5e5e5;
+}*/
+
+
+
+/* Litur fyrir mismunandi hluta á meðan vinnu stendur*/
+/*header{
+	background-color: #f0f;
+}
+
+.ferilskra{
+	background-color: #00f;
+}
+
+.um_mig, .ferilmappa{
+	background-color: #f00;
+}
+
+footer{
+	background-color: #0f0;
+}
+
+/* margin and padding */
+
+header, main, footer{
+		width: 100%;
+		max-width: 63rem;
+		margin: 0 auto;
+	}
+
+article, section, aside, figure, ul, li{
+	margin: 0;
+	padding: 0;
+}
+ 
+
+
+/* Letur */
+h1{
+	font-size: 2.5rem;
+}
+
+h2{
+	font-size: 2rem;
+}
+
+h3{
+	font-size: 1.5rem;
+}
+
+h1, h2, h3{
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+p, a{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1rem;
+}
+ul{
+	list-style-type: none;
+}
+
+.ferilskra ul li p, .ferilskra ul li a{
+	margin-left: 1rem;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+a:hover , a:hover i{
+	color: #fff;
+	background-color: #00a4a4;
+}
+
+.lysing{
+	font-style: oblique;
+	font-size: 0.75rem;
+}
+
+.upplysingar a{
+	line-height: 2.5rem;
+	font-size: 1.25rem;
+}
+
+footer a{
+	line-height: 2rem;
+}
+
+.ferilskra ul li:nth-child(odd){
+	background-color: #CFCFC4;
+}
+
+/* staðsetning og stærð*/
+.kynning, .ferilskra, .ferilmappa{
+	max-width: 64rem;
+	padding-bottom: 1rem;
+	border-bottom: 0.25rem solid #00a4a4;
+}
+
+#medmaeli ul li{
+	padding-bottom: 1rem;
+}
+
+.mynd{
+	float:right;
+}
+.upplysingar, .um_mig,{
+	float: left;
+	width: 100%;
+	max-width: 34rem;
+}
+
+.ferill_undirlidur, .mappa_undirlidur{
+	width: 31rem;
+	float: left;
+	padding-left: 1rem;
+}
+
+/* Myndir */
+
+.passamynd{
+	max-height: 31rem;
+	max-width: 25rem;
+	float: right;
+}
+
+.skjaskot{
+	max-height: 25rem;
+	max-width: 25em;
+}
+
+/* Litir á iconum */
+
+.icon-mail, .icon-phone, .icon-github, .icon-code,
+.icon-briefcase, .icon-mobile, .icon-graduation-cap,
+.icon-thumbs-up, h1, h2, h3, a{
+	color: #00a4a4;
+}
+
+@media only screen and (min-width: 40.063rem) and (max-width: 63.937rem) {
+	
+	/* staðsetning og stærð*/
+
+	.ferilmappa, .ferilskra{
+		width: 100%;
+		max-width: 63.937rem;
+	}
+
+	.um_mig{
+		float: left;
+	}
+	.mynd{
+		max-width: 11rem;
+		float: left;
+	}
+
+	.passamynd{
+		max-width: 11rem;
+		max-height: 13rem;
+	}
+
+	.upplysingar{
+		max-width: 18rem;
+		max-height: 13rem;
+	}
+
+	.ferill_undirlidur{
+		width: 100%;
+		padding-right: 1rem;
+	}
+
+	.mappa_undirlidur{
+		float: left;
+		width: 50%;
+		min-width: 25rem;
+	}
+
+	.hlekkur_a_leik{
+		margin-right: auto;
+		margin-left: auto;
+		float: none;
+		width: 25rem;
+	}
+
+	.skjaskot{
+		max-height: 25rem;
+		max-width: 25rem;
+	}
+}
+
+@media only screen and (max-width: 40rem) {
+
+	/* staðsetning og stærð*/
+
+	.ferilmappa, .ferilskra{
+		width: 100%;
+		max-width: 40rem;
+	}
+
+	.ferill_undirlidur{
+		width: 100%;
+		padding-right: 1rem;
+	}
+
+	.mynd{
+		max-width: 11rem;
+		float: left;
+	}
+
+	.upplysingar{
+		max-width: 18rem;
+		max-height: 13rem;
+	}
+	.um_mig{
+		float: left;
+	}
+
+	.passamynd{
+		max-width: 11rem;
+	}
+
+	.mappa_undirlidur {
+		float: left;
+		max-width: 25rem;
+	}
+}
+
