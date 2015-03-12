@@ -47,6 +47,10 @@ article, section, aside, figure, ul, li{
 	margin: 0;
 	padding: 0;
 }
+
+footer{
+	padding-bottom: 2rem;
+}
  
 
 
