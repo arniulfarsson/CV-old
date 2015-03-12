@@ -225,8 +225,8 @@ footer a{
 	}
 
 	.upplysingar{
-		max-width: 18rem;
-		max-height: 13rem;
+		width: auto;
+		float: left;
 	}
 	.um_mig{
 		float: left;
