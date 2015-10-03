@@ -1,16 +1,47 @@
 (function() {
+  var hagstofanAPI = "http://px.hagstofa.is/pxen/api/v1/en/Ibuar/mannfjoldi/3_bakgrunnur/Uppruni/MAN43001.px"
   var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
   $.getJSON( flickerAPI, {
-    tags: "mount rainier",
-    tagmode: "any",
-    format: "json"
-  })
+  "query": [
+    {
+      "code": "Sex",
+      "selection": {
+        "filter": "item",
+        "values": [
+          "Total"
+        ]
+      }
+    },
+    {
+      "code": "Citizenship",
+      "selection": {
+        "filter": "item",
+        "values": [
+          "Total"
+        ]
+      }
+    },
+    {
+      "code": "Year of arrival",
+      "selection": {
+        "filter": "item",
+        "values": [
+          "1986"
+        ]
+      }
+    }
+  ],
+  "response": {
+    "format": "px"
+  }
+})
     .done(function( data ) {
-      $.each( data.items, function( i, item ) {
+      console.log(data);
+      /*$.each( data.items, function( i, item ) {
         $( "<img>" ).attr( "src", item.media.m ).appendTo( "#images" );
         if ( i === 3 ) {
           return false;
         }
-      });
+      });*/
     });
 })();
