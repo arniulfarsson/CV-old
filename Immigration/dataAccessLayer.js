@@ -2,7 +2,8 @@
   var yearOfArrival = "1986";
   var hagstofanAPI = "http://px.hagstofa.is/pxen/api/v1/en/Ibuar/mannfjoldi/3_bakgrunnur/Uppruni/MAN43001.px"
   //var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
-  $.getJSON( hagstofanAPI, 
+  $.getJSON( hagstofanAPI, {
+  "query": [
     {
       "code": "Sex",
       "selection": {
@@ -30,9 +31,13 @@
         ]
       }
     }
+  ],
+  "response": {
+    "format": "px"
+  }
 })
     .done(function( data ) {
-      console.log(data.response);
+      console.log(data);
       /*$.each( data.items, function( i, item ) {
         $( "<img>" ).attr( "src", item.media.m ).appendTo( "#images" );
         if ( i === 3 ) {
