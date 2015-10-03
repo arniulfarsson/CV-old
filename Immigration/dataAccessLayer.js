@@ -37,7 +37,7 @@
   }
 })
     .done(function( data ) {
-      console.log(data);
+      console.log(data.response);
       /*$.each( data.items, function( i, item ) {
         $( "<img>" ).attr( "src", item.media.m ).appendTo( "#images" );
         if ( i === 3 ) {
